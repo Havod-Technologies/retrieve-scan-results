@@ -35,7 +35,7 @@ octokit
           if (alerts.length > 0) {
 
             pReduce(alerts, (alert) => {
-              console.log(`${owner},${repo},${alert.tool.name},${alert.rule.*}`)
+              console.log(`${owner},${repo},${alert.tool.name},${alert.rule.id},${alert.rule.severity},${alert.rule.description},${alert.rule.full_description},${alert.rule.help},${alert.state},${alert.created_at},${alert.dismissed_by},${alert.dismissed_at},${alert.html_url},${alert.dismissed_reason}`)
             }) 
           } 
           delay(300);
