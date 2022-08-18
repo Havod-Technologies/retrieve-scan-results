@@ -14,7 +14,7 @@ var buffer = ""
 const [, , ...args] = process.argv
 const owner = args[0]
 
-console.log("org,repo,tool,rule_id,severity,open,created_at,closed_by,closed_at,url,closed_reason")
+console.log("org,repo,tool,rule_id,severity,description,full description,open,created_at,closed_by,closed_at,url,closed_reason")
 octokit
   .paginate(octokit.repos.listForOrg, {
       org: owner,
